@@ -1,0 +1,380 @@
+<section>
+  <div class="all-settings-container">
+<div class="custom-container">
+    <!-- Heading Block -->
+    <div class="heading">
+      {% for block in section.blocks %}
+      {% if block.settings.heading != blank %}
+      <h1>{{ block.settings.heading }}</h1>
+      {% endif %}
+      {% endfor %}
+    </div>  
+<!-- Image Block -->
+    <div class="image-section">
+   {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+      {{ block.settings.image | image_url: width:250, height:250 | image_tag }}
+    {% endif %}
+    {% endfor %}
+
+<!-- Checkbox Block-->
+  <div>
+    {% for block in section.blocks %}
+        {% if block.settings.check %}
+         <h1>hello</h1>
+        {% endif %}
+      {% endfor %}
+  </div>
+
+<!-- Video block -->
+      <div>
+        {% for block in section.blocks %}
+          {% if block.settings.video %}
+            {{ block.settings.video }}
+             {% comment %}
+        <iframe src="{{ block.settings.video }}" title="Video in iframe">
+         </iframe>
+          {% endcomment %}
+            {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Select Block-->
+      <div class="paragraph">
+         {% for block in section.blocks %}
+          {% if block.settings.para != blank %}
+             {% if block.settings.select-box == 'left' %}
+               {% assign value='left' %}
+               {% elsif block.settings.select-box == 'center' %}
+               {% assign value ='center' %}
+               {% else %}
+               {% assign value ='right' %}
+                {% endif %}
+             <p style='text-align:{{ value }}'>{{ block.settings.para }} </p>
+            {% endif %}
+        {% endfor %}
+      </div>
+
+
+      <!-- Button Block -->
+      {% for block in section.blocks limit:2%}
+        {% if block.settings.button-label and block.settings.button-link %}
+      <div class="button-container">
+        <a href="{{ block.settings.button-link }}">{{ block.settings.button-label }}</a>
+      </div>
+          {% endif %}
+          {% endfor %}
+
+      <!-- Radio -->
+      <div class="radio-text">
+        {% for block in section.blocks %}
+          {% if block.settings.content != blank %}
+            <p style="text-align:{{ block.settings.radio-btn }}">{{ block.settings.content }}</p>
+            {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Product Information -->
+      <div class="product">
+        {% for block in section.blocks %}
+          {% if block.settings.product-title != blank %}
+            <p>{{ block.settings.product-title.title }}--{{ block.settings.product-title.price }}</p>
+            {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Range Block -->
+      <div class="range-para">
+        {% for block in section.blocks %}
+          {% if block.settings.range-content != blank %}
+            <p style="font-size:{{ block.settings.font-size }}px">{{ block.settings.range-content }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+
+      <!-- richtext -->
+      <div>
+        {% for block in section.blocks %}
+            <div class="richtext-content">{{ block.settings.rich_text }}</div>
+        {% endfor %}
+      </div>
+
+      <!-- inline richtext -->
+      <div class="inlinerichtext-content">
+        {% for block in section.blocks %}
+          {% if block.settings.inline_richtext != blank  %}
+            <p>{{ block.settings.inline_richtext }}</p>
+            {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Collection -->
+      <div class="collection-content">
+        {% for block in section.blocks %}
+          <p>{{ block.settings.collection_item.all_products_count }}</p>
+        {% endfor %}
+      </div>
+
+      <!-- Number -->
+      <div class="number-content">
+        {% for block in section.blocks%}
+          {% assign num= block.settings.product_number %}
+          {% for num in (1..num) %}
+            <p>{{ num }}</p>
+            {% endfor %}
+        {% endfor%}
+      </div>
+
+      <!-- Font Picker -->
+      <div class="font-picker">
+        {% for block in section.blocks limit:1%}
+          <p style="font-family:{{ block.settings.font-family }}"> Welcome to our Store </p>
+        {% endfor %}
+      </div>
+</div>
+  </div>
+</div>
+</section>
+
+{% style %}
+  .heading h1{
+    color:{{section.settings.text-color}};
+  }
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "All Settings",
+    "settings": [
+       {
+            "type": "color",
+            "id":"text-color",
+            "label": "Text",
+            "default":"#000"
+      },
+    ],
+    "blocks":[
+      {
+        "name":"Heading",
+        "type": "heading",
+        "settings": [
+          {
+            "type": "text",
+            "id":"heading",
+            "label": "Heading",
+            "default":"Hello World"
+          },
+        ]
+      },
+      {
+        "name":"Image",
+        "type": "image",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          }
+        ],
+      },
+       {
+        "name":"Checkbox",
+        "type": "checkbox",
+        "settings":[
+          {
+            "type": "checkbox",
+            "id":"check",
+            "label":"Checkbox",
+            "default":false
+          }
+        ],
+      },
+      {
+        "name":"Video",
+        "type": "video",
+        "settings":[
+          {
+            "type":"html",
+            "id":"video",
+            "label":"Video Embeded Code",
+          }
+        ],
+      },
+       {
+        "name":"Text",
+        "type": "text",
+        "settings":[
+           {
+            "type": "text",
+            "id":"para",
+            "label":"Content"
+          },
+          {
+            "type": "select",
+            "id":"select-box",
+            "label":"Alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+               "value": "center" ,
+                "label": "Middle"
+              },
+              {
+               "value": "right" ,
+                "label": "Right"
+              }
+            ],
+            "default":"left"
+          },
+        ],
+      },
+      {
+        "name":"Buttons",
+        "type":"buttons",
+        "settings": [
+          {
+            "type": "text",
+            "id":"button-label",
+            "label": "Button Label"
+          },
+          {
+            "type": "url",
+            "id": "button-link",
+            "label": "Button Link"
+          },
+        ]
+        
+      },
+       {
+        "name":"Radio Button",
+        "type":"radio-button",
+        "settings": [
+          {
+            "type": "radio",
+            "id":"radio-btn",
+            "label": "Alignment",
+            "options":[
+              { 
+               "value":"left",
+                "label": "Left"
+              },
+              { 
+               "value":"center",
+                "label": "Center"
+              },
+              { 
+               "value":"right",
+                "label": "Right"
+              }
+            ],
+            "default":"left"
+          },
+          {
+            "type": "text",
+            "id": "content",
+            "label": "Content"
+          },
+        ]
+        
+      },
+      {
+        "name":"Product",
+        "type": "product-information",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product-title",
+            "label": "Product Title"
+          }
+        ]
+      },
+      {
+        "name":"Range",
+        "type": "range",
+        "settings": [
+          {
+            "type": "text",
+            "id": "range-content",
+            "label": "Content"
+          },
+          {
+            "type": "range",
+            "id": "font-size",
+            "min": 14,
+            "max": 50,
+            "unit": "px",
+            "step": 1,
+            "label": "Font Size",
+            "default":16
+          },
+        ]
+      },
+      {
+            "name":"Rich Text",
+            "type": "rich_text",
+            "settings":[
+              {
+                "type":"richtext",
+                "id": "rich_text",
+                "label": "Rich Text"
+              }
+          ] 
+      },
+      {
+        "name":"Inline RichText",
+        "type": "inline_richtext",
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "inline_richtext",
+            "label": "Inline RichText"
+          }
+        ]
+      },
+      {
+        "name":"Collection",
+        "type": "collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id":"collection_item",
+            "label": "Collection"
+          }
+        ]
+      },
+      {
+        "name":"Number",
+        "type": "number",
+        "settings": [
+          {
+            "type": "number",
+            "id": "product_number",
+            "label": "Number"
+          }
+        ]
+      },
+      {
+          "name":"Font Family",
+           "type": "font_picker",
+        "settings": [
+          {
+            "type": "font_picker",
+            "id": "font-family",
+            "label": "Font",
+            "default":"sans-serif"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name":"All Settings"
+      }
+    ]
+  }
+{% endschema %}

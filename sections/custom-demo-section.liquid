@@ -1,0 +1,151 @@
+<section>
+  <div style="padding-top: {{section.settings.padding_top}}; padding-bottom:{{ section.settings.padding_bottom }}" 
+    class="gallery-container pt pb  color-{{ section.settings.bg-color }}">
+    <div class="custom-gallery-container">
+      {% if section.settings.heading != blank %}
+       <h1>{{ section.settings.heading  }}</h1>
+        {% endif %}
+       <div class="grid-container p-relative">
+         {% for block in section.blocks %}
+          <div class="grid-column image-container p-relative" style="grid-row:span {{ block.settings.row-span}}">
+            {% if block.settings.image != blank %}
+              <a href="{{ block.settings.link }}">
+              <img src="{{ block.settings.image | img_url:'master' }}" width="100%" height="100%" loading="lazy" class="p-relative">
+                </a>
+                {% if block.settings.image-title != blank %}
+                <div class="image-title-container d-fex">
+                  <div class="p-15">
+                  <span class="heading"> {{ block.settings.image-title }} </span>
+                  <span class="paragraph">{{ block.settings.subtitle }}</span>
+                    {% if block.settings.button-label and block.settings.button-link %}
+                    <div class="custom-btn">
+                      <a href="{{ block.settings.button-link }}">{{ block.settings.button-label }}</a>
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+                  {% endif %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% style %}
+  /* first section */
+  .pt{
+    padding-top:20px;
+  }
+  .pb{
+    padding-bottom:50px;
+  }
+  .grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:20px;
+    grid-auto-rows:350px;
+  }
+  .grid-column img{
+    object-fit:cover;
+  } 
+  h1{
+    color:{{section.settings.text-color}};
+  }
+  
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "Demo",
+    "settings": [
+        {
+        "type": "color_scheme",
+        "id": "bg-color",
+        "label": "Background"
+      },
+      {
+        "type": "text",
+         "id": "heading",
+         "label": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text",
+        "default":"#000"
+      },
+      {
+            "type": "range",
+            "id": "padding_top",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default":1,
+            "label": "Padding Top"
+      },
+      {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default":1,
+            "label": "Padding Bottom"
+      }
+    ],
+    "blocks": [
+      {
+        "name":"Image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "row-span",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default":1,
+            "label": "Row Span"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "image-title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+          },
+          {
+            "type": "text",
+            "id":"button-label",
+            "label": "Button Label"
+          },
+          {
+            "type": "url",
+            "id":"button-link",
+            "label": "Button Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Demo"
+      }
+    ]
+  }
+{% endschema %}

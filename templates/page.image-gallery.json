@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_image_gallery_cTYYjT": {
+      "type": "custom-image-gallery",
+      "blocks": {
+        "image_picker_mdjcEV": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/blog-image-3.png",
+            "row-span": 1,
+            "title": "Dark Coffee"
+          }
+        },
+        "image_picker_Xh9MFY": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/blog-image-2.png",
+            "row-span": 2,
+            "title": ""
+          }
+        },
+        "image_picker_QGDQXx": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/home-image.png",
+            "row-span": 3,
+            "title": ""
+          }
+        },
+        "image_picker_a7Qt89": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/choose-from-packs.png",
+            "row-span": 2,
+            "title": ""
+          }
+        },
+        "image_picker_L3Tk6t": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/footer-img-copy.png",
+            "row-span": 2,
+            "title": ""
+          }
+        },
+        "image_picker_QQKbVq": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/blog-image-2.png",
+            "row-span": 1,
+            "title": ""
+          }
+        },
+        "image_picker_9zETWX": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify://shop_images/family-loved-img_38055ca2-a8d4-4e6c-84c9-a162872fe395.png",
+            "row-span": 1,
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_mdjcEV",
+        "image_picker_Xh9MFY",
+        "image_picker_QGDQXx",
+        "image_picker_a7Qt89",
+        "image_picker_L3Tk6t",
+        "image_picker_QQKbVq",
+        "image_picker_9zETWX"
+      ],
+      "settings": {
+        "section-heading": "Gallery",
+        "text-color": "#0808a7"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_image_gallery_cTYYjT"
+  ]
+}

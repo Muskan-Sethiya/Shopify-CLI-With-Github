@@ -1,0 +1,41 @@
+  .paragraph p, .radio-text p, .product p, .range-para p, .richtext-content , .inlinerichtext-content p, .collection-content p, 
+.number-content p, .font-picker p{
+    color:black;
+  }
+  .button-container a{
+    padding:12px 20px;
+    background:black;
+    color:white;
+  }
+
+
+.image-section{
+    background:#fff;
+    padding: 40px 0;
+}
+.all-settings-container{
+  background:#fff;
+}
+.custom-container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 40px;
+}
+
+.image-title{
+  background:black;
+  position:absolute;
+  left:50%;
+  top:50%;
+  display:none;
+  transform:translate(-50%,-50%);
+}
+.image-column:hover .image-title{
+  display:block;
+}
+.text-white{
+   color:#ffff;
+}
+.p-relative{
+  position:relative;
+}

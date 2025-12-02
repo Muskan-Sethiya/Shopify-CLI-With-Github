@@ -1,0 +1,324 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_image_banner_section_gwhbFi": {
+      "type": "custom-image-banner-section",
+      "blocks": {
+        "heading_FyXQ9T": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Fine blend. 30 bags/mo.</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_jVMpRz": {
+          "type": "text",
+          "settings": {
+            "text": "Enjoy fresh & favourite coffee everyday.",
+            "text_style": "subtitle"
+          }
+        },
+        "address_i6cceR": {
+          "type": "address",
+          "settings": {
+            "street_no": "75, our street name,",
+            "street_name": "Boston, New York – 5623."
+          }
+        }
+      },
+      "block_order": [
+        "heading_FyXQ9T",
+        "text_jVMpRz",
+        "address_i6cceR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/home-banner-bg_4a2e938e-11f6-49c0-89ee-c40830880a1e.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_second_section_HtXVkB": {
+      "type": "custom-second-section",
+      "settings": {
+        "image": "shopify://shop_images/home-banner-img_79e085d5-bd99-473c-8115-c0cccc977948.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_why_macchiato_section_4KGnrc": {
+      "type": "custom-why-macchiato-section",
+      "blocks": {
+        "column_4n76tf": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Why Macchiato?</strong>",
+            "text": "",
+            "link_label": "Explore more",
+            "link": "shopify://collections/all"
+          }
+        },
+        "column_YnaBaA": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Nullam purus metus, faucibus a ipsum vel, dignissim varius tellus. Phasellus congue elit vel tincidunt feugiat. Etiam at sapien vulputate, dignissim eros ac, faucibus leo. Class aptent taciti sociosqu ad.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7LQXgX": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Curabitur eu ante efficitur, porta quam sed, commodo leo. Aliquam eget velit a tortor molestie pellentesque. Ut a purus pharetra orci varius tempor. Aliquam eu ligula libero tortor ut.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4n76tf",
+        "column_YnaBaA",
+        "column_7LQXgX"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-f260500e-6ff0-4aba-9938-edaab13cd928",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_beans_section_VEiBAe": {
+      "type": "custom-beans-section",
+      "blocks": {
+        "column_HMGPJj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bean-leaf_070c8e4a-9834-445f-8cf1-79321b87550c.png",
+            "title": "Finest beans from plants",
+            "text": "<p>Morbi tempus vel nisl at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. In egestas bibendum ipsum, sit amet porttitor scelerisque eu.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_J7yVjn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mill_ce9dc163-d389-4508-963b-e0ca2474e134.png",
+            "title": "Fine Roasted",
+            "text": "<p>Morbi tempus vel nisl at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. In egestas bibendum ipsum, sit amet porttitor scelerisque eu.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tzVnjc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/coffee_69bbc3ae-7453-46b9-9370-372d6492ea8c.png",
+            "title": "Signature flavour",
+            "text": "<p>Morbi tempus vel nisl at pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. In egestas bibendum ipsum, sit amet porttitor scelerisque eu.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HMGPJj",
+        "column_J7yVjn",
+        "column_tzVnjc"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-9d32e1c4-0381-4c02-9f34-87d358cc0086",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_featured_collection_H7XetR": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "title": "<strong>Highly recommended products</strong>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "coffee",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_purchasing_section_N4cQyU": {
+      "type": "custom-purchasing-section",
+      "blocks": {
+        "heading_nJwwAK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save more!when purchasing our monthly pack.",
+            "heading_size": "h1"
+          }
+        },
+        "text_MRTD44": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mauris placerat elit eu massa lacinia porttitor.</p><p>Donec pretium porttitor felis, egestas dictum justo congue a.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jJNGkQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Go to our shop",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_nJwwAK",
+        "text_MRTD44",
+        "button_jJNGkQ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/purchasing-section-img_0bb364b4-a0f0-4587-8be0-925a23cc2f1d.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "family_love_section_E3BBCG": {
+      "type": "Family-love-section",
+      "blocks": {
+        "caption_W3jmDP": {
+          "type": "caption",
+          "settings": {
+            "caption": "We also have a decent store.",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_nRWtQ4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Love Dine-In? Drive to our shop with your family or loved one",
+            "heading_size": "h2"
+          }
+        },
+        "text_zKy8Ly": {
+          "type": "text",
+          "settings": {
+            "text": "<p>75, our street name,</p><p>Boston, New York – 5623</p><p></p><p></p><p>Mon – Fri (9:30AM – 7:30PM)</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HWjzqb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Locate us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "caption_W3jmDP",
+        "heading_nRWtQ4",
+        "text_zKy8Ly",
+        "button_HWjzqb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/family-loved-img_afdaf1a8-28e3-4a14-9c92-faba80438121.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "custom_image_banner_section_gwhbFi",
+    "custom_second_section_HtXVkB",
+    "custom_why_macchiato_section_4KGnrc",
+    "custom_beans_section_VEiBAe",
+    "custom_featured_collection_H7XetR",
+    "custom_purchasing_section_N4cQyU",
+    "family_love_section_E3BBCG"
+  ]
+}

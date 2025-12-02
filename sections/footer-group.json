@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_footer_V3nLXe": {
+      "type": "custom-footer",
+      "blocks": {
+        "menu_item_x73Uj4": {
+          "type": "menu-item",
+          "settings": {
+            "menu_heading": "Our shop",
+            "menu": "footer"
+          }
+        },
+        "menu_item_jigYXm": {
+          "type": "menu-item",
+          "settings": {
+            "menu_heading": "Useful links",
+            "menu": "footer-second-menu"
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_x73Uj4",
+        "menu_item_jigYXm"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/logo-lite_95841852-9844-4476-a37a-0d228d087261.png",
+        "footer-image": "shopify://shop_images/footer-img-copy.png",
+        "image-text": "Enjoy your coffee everyday!",
+        "copyright": "Copyright © AgniHD. 2022 All rights reserved.",
+        "payment-methods": "shopify://shop_images/payment-methods.png"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom_footer_V3nLXe",
+    "footer"
+  ]
+}

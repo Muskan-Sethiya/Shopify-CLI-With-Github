@@ -1,0 +1,121 @@
+<footer>
+   <div class="footer-section header-bg ">
+    <div class="container">
+     <div class="row mlr-30 pb-55 row-wrap mlr-xs-0">
+      <div class="footer-logo-section plr-30 plr-xs-0">
+        <div class="footer-logo">
+        <div class="logo-image">
+            <img src="{{ section.settings.logo | img_url:'master'}}" width="100%" height="auto">
+        </div>
+    </div>
+      </div>
+      <div class="list-1 plr-30 plr-xs-0 row" id="list-1">
+        {% for block in section.blocks %}
+        {% case block.type %}
+        {% when 'menu-item' %}
+         <div class="custom-menu-list-item">
+        {% if block.settings.menu_heading != blank %}
+           <span class="link-heading text">{{ block.settings.menu_heading }}</span>
+          {% endif %}
+        <span id="footer-link-1"> <svg fill="#fff" height="8px" width="8px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" transform="rotate(180)matrix(1, 0, 0, 1, 0, 0)" stroke="#fff" stroke-width="0"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"></path> <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"></path> </g></svg>
+        </span>
+        <div class="navbar-links" id="nav-link-1">
+          {% if block.settings.menu != blank %}
+            <ul>
+              {% for link in block.settings.menu.links %}
+                <li> <a href="{{ link.url }}" class="text"> {{ link.title | escape }}</a></li>
+             {% endfor %}
+            </ul> 
+              {% endif %}
+           </div>
+        </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="footer-image-section plr-30 p-relative plr-xs-0">
+       <div class="footer-image p-relative">
+        <img src="{{ section.settings.footer-image| image_url:width:'100%'}}" height="auto" alt="" width="100%">
+       </div>
+       <div class="footer-img-content text">
+        <h2>{{ section.settings.image-text }}</h2>
+        <div class="explore-plans">
+            <a href="#" class="text">Explore plans</a>
+          </div>
+       </div>
+      </div>
+    </div>
+    <hr class="hr-line">
+<div class="copyright-section">
+    <div class="d-fex space-between row-wrap">
+    <div class="para text">
+        <p>{{ section.settings.copyright }}</p>
+    </div>
+  <div class="payment-methods">
+        <div class="payment-img">
+            <img src="{{ section.settings.payment-methods | img_url:'master' }}" height="auto" alt="payment" width="100%">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+</footer>
+
+
+
+{% schema %}
+  {
+    "name": "custom-footer",
+    "settings": [ 
+      {
+       "type":"image_picker",
+        "id":"logo",
+        "label": "Logo"
+      },
+      {
+       "type":"image_picker",
+        "id":"footer-image",
+        "label": "Image"
+      },
+      {
+        "type":"text",
+        "id":"image-text",
+        "label": "Text Above Image"
+      },
+      {
+        "type":"text",
+        "id":"copyright",
+        "label": "Copyright Text"
+      },
+      {
+        "type":"image_picker",
+        "id":"payment-methods",
+        "label": "Payment Methods Image"
+      },
+    ],
+    "blocks":[
+      {
+        "name":"Menu",
+         "type":"menu-item",
+        "limit": 2,
+        "settings":[
+          {
+            "type":"inline_richtext",
+            "id": "menu_heading",
+            "label":"Heading"
+          },
+          {
+            "type":"link_list",
+            "id":"menu",
+            "label":"Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+         "name":"custom-footer",
+      }
+    ]
+  }
+{% endschema %}

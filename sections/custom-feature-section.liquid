@@ -1,0 +1,102 @@
+<section>
+  <div class="feature-section">
+    <div class="feature-container">
+      <div class="feature-flex-container row align-center row-wrap">
+          {% for block in section.blocks %}
+            {% if block.settings.image %}
+          <div class="col-4 col-sm-12">
+            <div class="row align-center mlr-10">
+            <div class="image-container plr-10">
+                <img src="{{ block.settings.image | img_url:'master' }}" width="35px" height="35px">
+            </div>
+              <div class="feature-content plr-10">
+                   <span class="feature-heading">{{ block.settings.feature-heading }}</span>
+                   <span class="feature-subtitle">{{ block.settings.feature-subtitle }}</span>
+              </div>
+            </div>
+          </div>
+            {% endif %}
+          {% endfor %}
+      </div>
+      </div>
+  </div>
+</section>
+
+{% style %}
+.feature-section{
+  background:{{section.settings.bg-color}};
+}
+  .row{
+    display:flex;
+  }
+  .col-4{
+    width:33.33%;
+  }
+  /* span.feature-heading{
+    color:;
+    display:block;
+  }
+  span.feature-subtitle{
+    color:;
+     display:block;
+  }
+  span.feature-subtitle,  span.feature-heading{
+    font-family:sans-serif;
+  } */
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "Feature",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background",
+        "default":"#000"
+      }
+    ],
+    "blocks": [
+      {
+        "name":"Feature",
+        "type": "feature",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "feature-heading",
+            "label": "Heading"
+          },
+           {
+            "type": "text",
+            "id": "feature-subtitle",
+            "label": "Subtitle"
+          },
+          {
+            "type": "color",
+            "id":"heading-color",
+            "label": "Heading Text",
+            "default":"#fff"
+          },
+          {
+            "type": "color",
+            "id": "subtitle-color",
+            "label": "Subtitle Text",
+            "default":"#fff"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feature"
+      }
+    ]
+  }
+{% endschema %}

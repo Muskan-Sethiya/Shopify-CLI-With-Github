@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_all_setting_types_bFLkKa": {
+      "type": "custom-all-setting-types",
+      "blocks": {
+        "buttons_cpyjJP": {
+          "type": "buttons",
+          "settings": {
+            "button-label": "Visite us",
+            "button-link": "shopify://collections/all"
+          }
+        },
+        "image_YpdAcw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/home-image.png"
+          }
+        },
+        "video_ACbUqG": {
+          "type": "video",
+          "settings": {
+            "video": "<iframe width=\"695\" height=\"391\" src=\"https://www.youtube.com/embed/cpoXLj24BDY\" title=\"🚀 🔥 JavaScript Complete Course (2024) 4 Projects | Notes | GitHub | Free Certification\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+          }
+        },
+        "heading_x94bjt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hello World"
+          }
+        },
+        "radio_button_aQiVgU": {
+          "type": "radio-button",
+          "settings": {
+            "radio-btn": "center",
+            "content": "Shopify themes are a package of template files, building blocks, and supporting assets. Use these building blocks to create modular, customizable themes."
+          }
+        },
+        "product_information_3DagT6": {
+          "type": "product-information",
+          "settings": {
+            "product-title": "vanilla-cappuccino"
+          }
+        },
+        "range_TgwCVn": {
+          "type": "range",
+          "settings": {
+            "range-content": "My name is Muskan",
+            "font-size": 45
+          }
+        },
+        "rich_text_WzyVrp": {
+          "type": "rich_text",
+          "settings": {
+            "rich_text": "<p><em><strong>Welcome</strong></em></p>"
+          }
+        },
+        "collection_9MFwa3": {
+          "type": "collection",
+          "settings": {
+            "collection_item": "coffee"
+          }
+        },
+        "number_PXKXRR": {
+          "type": "number",
+          "settings": {
+            "product_number": 10
+          }
+        },
+        "font_picker_4RkUCb": {
+          "type": "font_picker",
+          "settings": {
+            "font-family": "antique_olive_n4"
+          }
+        }
+      },
+      "block_order": [
+        "buttons_cpyjJP",
+        "image_YpdAcw",
+        "video_ACbUqG",
+        "heading_x94bjt",
+        "radio_button_aQiVgU",
+        "product_information_3DagT6",
+        "range_TgwCVn",
+        "rich_text_WzyVrp",
+        "collection_9MFwa3",
+        "number_PXKXRR",
+        "font_picker_4RkUCb"
+      ],
+      "settings": {
+        "text-color": "#121212"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_all_setting_types_bFLkKa"
+  ]
+}

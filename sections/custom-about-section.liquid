@@ -1,0 +1,35 @@
+<div class="mycustomdiv">
+  {% if section.settings.heading != blank %}
+  <h1>{{ section.settings.heading }}</h1>
+  {% endif %}
+</div>
+<div class="myimage">
+  {% if section.settings.img != blank %}
+<img src="{{ section.settings.img | img_url:'master' }}" width="100%" height="auto" alt="shopname">  
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "mysection",
+    "settings": [
+      {
+        "type": "text",
+        "id":"heading",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id":"img",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "mysection",
+      }
+    ]
+  }
+
+{% endschema %}

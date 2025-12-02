@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_demo_section_KaX8KM": {
+      "type": "custom-demo-section",
+      "blocks": {
+        "image_fiUHDJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-top_600x_62b884de-69dd-4539-8dcb-4e019af518bf.webp",
+            "row-span": 2,
+            "link": "shopify://collections/all",
+            "image-title": "women tops",
+            "subtitle": "From world's top designer",
+            "button-label": "discover now",
+            "button-link": "shopify://pages/demo"
+          }
+        },
+        "image_9pcJLR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/men-clothing_600x_1d791b69-629d-4edb-a1e7-683fb4db55ec.webp",
+            "row-span": 1,
+            "link": "",
+            "image-title": "Men shirts",
+            "subtitle": "Up to 70% off on selected item",
+            "button-label": "Shop now",
+            "button-link": "shopify://pages/demo"
+          }
+        },
+        "image_bVa9jL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/denim_600x_6cfda4da-fd7e-4055-8d48-b44c7b2249d1.webp",
+            "row-span": 2,
+            "link": "shopify://collections/all",
+            "image-title": "denim",
+            "subtitle": "Find your perfect outfit",
+            "button-label": "shop now",
+            "button-link": "shopify://pages/demo"
+          }
+        },
+        "image_DJMem9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/accesories_600x_80a0dbbd-0317-481b-9f0f-5c39f196db8f.webp",
+            "row-span": 1,
+            "link": "shopify://collections/all",
+            "image-title": "ACCESSORIES",
+            "subtitle": "add finishing touch to your outfit",
+            "button-label": "shop now",
+            "button-link": "shopify://pages/demo"
+          }
+        }
+      },
+      "block_order": [
+        "image_fiUHDJ",
+        "image_9pcJLR",
+        "image_bVa9jL",
+        "image_DJMem9"
+      ],
+      "settings": {
+        "bg-color": "scheme-2",
+        "heading": "Gallery",
+        "text-color": "#f81717",
+        "padding_top": 1,
+        "padding_bottom": 1
+      }
+    },
+    "custom_feature_section_fRJGfc": {
+      "type": "custom-feature-section",
+      "blocks": {
+        "feature_YzmY4F": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/icons8-container-truck-24.png",
+            "feature-heading": "FREE SHIPPING & RETURN",
+            "feature-subtitle": "Free shipping on all US orders",
+            "heading-color": "#000000",
+            "subtitle-color": "#000000"
+          }
+        },
+        "feature_TUAf3y": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/money-guarantee2.png",
+            "feature-heading": "MONEY GAURNTEE",
+            "feature-subtitle": "30 days money back guarantee",
+            "heading-color": "#ffffff",
+            "subtitle-color": "#ffffff"
+          }
+        },
+        "feature_axyCRq": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/contact.png",
+            "feature-heading": "ONLINE SUPPORT",
+            "feature-subtitle": "We support online 24/7 on day",
+            "heading-color": "#ffffff",
+            "subtitle-color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "feature_YzmY4F",
+        "feature_TUAf3y",
+        "feature_axyCRq"
+      ],
+      "settings": {
+        "bg-color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_demo_section_KaX8KM",
+    "custom_feature_section_fRJGfc"
+  ]
+}
