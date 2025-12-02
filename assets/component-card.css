@@ -593,3 +593,29 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/* --- BEGIN: Featured Collection Card Grid Fix --- */
+.custom-slider-responsive .grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  height: 100%;
+}
+.custom-slider-responsive .product-card-wrapper {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none !important;
+  min-width: 0;
+}
+.custom-slider-responsive .card {
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+.custom-slider-responsive .card__content,
+.custom-slider-responsive .card__information {
+  align-items: center;
+  text-align: center;
+}
+/* --- END: Featured Collection Card Grid Fix --- */
